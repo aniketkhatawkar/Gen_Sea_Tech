@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gen Sea Tech</title>
+<link rel="icon" href="assets/logo.png" type="image/png" >
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Arial, sans-serif;
+	}
+	
+	body {
+		line-height: 1.6;
+	}
+
+	header p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+	
+	.hero {
+		height: 90vh;
+		background: #81d4fa;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	.hero h1 {
+		font-size: 3rem;
+	}
+	
+	.hero p {
+		margin-top: 10px;
+		font-size: 1.2rem;
+	}
+	
+	.hero button {
+		margin-top: 20px;
+		padding: 10px 20px;
+		background-color: #00bcd4;
+		color: #fff;
+		border: none;
+		font-size: 1rem;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	
+	.hero button:hover {
+		background-color: #008c9e;
+	}
+
+	.section {
+		padding: 50px 20px;
+		text-align: center;
+	}
+	
+	.section h2 {
+		font-size: 2rem;
+		margin-bottom: 20px;
+		color: #333;
+	}
+	
+	.section p {
+		margin-bottom: 20px;
+		font-size: 1rem;
+		color: #666;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		margin-top: 20px;
+	}
+
+	.card {
+		background: #f4f4f4;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.card h3 {
+		margin-bottom: 10px;
+		font-size: 1.2rem;
+		color: #555;
+	}
+
+	.card p {
+		font-size: 0.9rem;
+		color: #777;
+	}
+
+	.contact {
+		background: #00bcd4;
+		color: #fff;
+		padding: 50px 20px;
+	}
+	
+	.contact h2 {
+		margin-bottom: 20px;
+	}
+
+	.contact form {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.contact input, .contact textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.contact button {
+		padding: 10px 20px;
+		border: none;
+		background: #008c9e;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	.contact button:hover {
+		background: #006b76;
+	}
+</style>
+</head>
+<body>
+	<!-- NavBar -->
+	<%@ include file="navbar.jsp" %>
+
+	<!-- Hero Section -->
+	<div class="hero">
+		<div>
+			<h1>Welcome to GenSea Tech</h1>
+			<p>Your one-stop solution for [services/products]</p>
+			<button>Get Started</button>
+		</div>
+	</div>
+
+	<!-- About Us Section -->
+	<div class="section" id="about">
+		<h2>About Us</h2>
+		<p>At Gen Sea Tech, we innovate and build technology solutions that simplify life. Our mission is to revolutionize the way you interact with technology.</p>
+	</div>
+
+	<!-- Services Section -->
+	<div class="section" id="services">
+		<h2>Our Services</h2>
+		<div class="cards">
+			<div class="card">
+				<h3>Custom Software Development</h3>
+				<p>Tailored solutions designed to meet your unique business needs.</p>
+			</div>
+			<div class="card">
+				<h3>AI and Machine Learning</h3>
+				<p>Empowering businesses with intelligent data-driven decisions.</p>
+			</div>
+			<div class="card">
+				<h3>Web and Mobile Apps</h3>
+				<p>Creating seamless, user-friendly experiences for your customers.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Products Section -->
+	<div class="section" id="products">
+		<h2>Our Products</h2>
+		<p>Explore our range of cutting-edge software products designed for efficiency and innovation.</p>
+	</div>
+
+	<!-- Why Choose Us Section -->
+	<div class="section" id="why-us">
+		<h2>Why Choose Us?</h2>
+		<p>At Gen Sea Tech, we prioritize quality, innovation, and customer satisfaction. Here’s why clients trust us:</p>
+		<ul>
+			<li>Innovative and scalable solutions</li>
+			<li>Experienced professionals</li>
+			<li>Customer-first approach</li>
+		</ul>
+	</div>
+
+	<!-- Testimonials Section -->
+	<div class="section" id="testimonials">
+		<h2>Testimonials</h2>
+		<p>See what our happy clients have to say about Gen Sea Tech.</p>
+	</div>
+
+	<!-- Contact Us Section -->
+	<div class="contact" id="contact">
+		<h2>Contact Us</h2>
+		<form>
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+			<button type="submit">Send Message</button>
+		</form>
+	</div>
+
+	<!-- Footer -->
+	<%@ include file="footer.jsp" %>
+</body>
+</html>

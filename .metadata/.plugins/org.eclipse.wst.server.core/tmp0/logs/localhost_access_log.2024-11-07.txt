@@ -1,0 +1,15 @@
+127.0.0.1 - - [07/Nov/2024:12:09:42 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:09:44 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2181
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:10:42 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2181
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:17:50 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2182
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:18:06 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 2663
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:21:42 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2183
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:21:45 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 3235
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:27:22 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2183
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:27:25 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 3235
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:28:44 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2183
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:28:46 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 3236
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:31:36 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2183
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:31:38 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 3324
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:34:46 +0530] "GET /Gen_Z_Tech_Website/home.jsp HTTP/1.1" 200 2183
+0:0:0:0:0:0:0:1 - - [07/Nov/2024:12:34:49 +0530] "GET /Gen_Z_Tech_Website/connectus.jsp HTTP/1.1" 200 3238

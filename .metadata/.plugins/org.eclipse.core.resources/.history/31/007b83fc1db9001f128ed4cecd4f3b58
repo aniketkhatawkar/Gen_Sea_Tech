@@ -1,0 +1,99 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding:0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .product {
+            width: 100%;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .product h2 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- NavBar -->
+    <%@ include file="navbar.jsp" %>
+
+    <div class="container">
+        <h1 class="fade-in">Our Exclusive Products</h1>
+        <div class="product-list">
+            <div class="product fade-in">
+                <img src="assets/product1.jpg" alt="Product 1">
+                <h2>Product Title 1</h2>
+                <p>Short description for product 1. Highlighting its key features and benefits in brief.</p>
+            </div>
+
+            <div class="product fade-in" style="animation-delay: 0.2s;">
+                <img src="assets/product2.jpg" alt="Product 2">
+                <h2>Product Title 2</h2>
+                <p>Short description for product 2. Highlighting its key features and benefits in brief.</p>
+            </div>
+
+            <div class="product fade-in" style="animation-delay: 0.4s;">
+                <img src="assets/product3.jpg" alt="Product 3">
+                <h2>Product Title 3</h2>
+                <p>Short description for product 3. Highlighting its key features and benefits in brief.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <%@ include file="footer.jsp" %>
+</body>
+</html>

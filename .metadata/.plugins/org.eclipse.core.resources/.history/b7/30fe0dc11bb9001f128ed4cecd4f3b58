@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <%@ include file="navbar.jsp" %>
+
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <h2>Product Title 1</h2>
+                <p>Short description for product 1. Highlighting its key features and benefits in brief.</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Product Title 2</h2>
+                <p>Short description for product 2. Highlighting its key features and benefits in brief.</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Product Title 3</h2>
+                <p>Short description for product 3. Highlighting its key features and benefits in brief.</p>
+            </div>
+        </div>
+
+        <form action="addProductServlet" method="post">
+            <h2>Add a New Product</h2>
+            <div class="form-group">
+                <label for="productTitle">Product Title:</label>
+                <input type="text" id="productTitle" name="productTitle" required placeholder="Enter product title">
+            </div>
+
+            <div class="form-group">
+                <label for="productShortDescription">Short Description:</label>
+                <textarea id="productShortDescription" name="productShortDescription" rows="3" placeholder="Enter short description" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <%@ include file="footer.jsp" %>
+</body>
+</html>

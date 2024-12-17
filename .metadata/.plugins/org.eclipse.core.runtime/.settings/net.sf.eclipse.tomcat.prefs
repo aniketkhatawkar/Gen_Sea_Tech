@@ -1,0 +1,11 @@
+computeSourcePath=true
+configMode=serverFile
+contextsDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\conf\\Catalina\\localhost
+eclipse.preferences.version=1
+managerUrl=http\://localhost\:8080/manager
+projectsInCp=Gen_Z_Tech_Site;Servers;
+projectsInSourcePath=Gen_Z_Tech_Site;
+tomcatConfigFile=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\conf\\server.xml
+tomcatDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0
+tomcatJRE=1729778062995
+tomcatVersion=tomcatV9
